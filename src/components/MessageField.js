@@ -3,12 +3,14 @@ import { TextField } from '@material-ui/core';
 
 import { pushMessage } from '../firebase';
 
-const MessageField = ({ name, setText, text }) => {
+const MessageField = ({ inputEl, name, setText, text }) => {
   const [isComposed, setIsComposed] = useState(false);
 
   return (
     <TextField
+      autoFocus
       fullWidth={true}
+      inputRef={inputEl}
       onChange={(e) => setText(e.target.value)}
       onKeyDown={(e) => {
         if (isComposed) return;
