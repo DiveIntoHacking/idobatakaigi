@@ -21,7 +21,11 @@ const MessageItem = ({ isLastItem, name, text }) => {
   const classes = useStyles();
   const avatarPath = gravatarPath(name);
 
-  useEffect(() => {}, [isLastItem]);
+  useEffect(() => {
+    if (isLastItem) {
+      ref.current.scrollIntoView();
+    }
+  }, [isLastItem]);
 
   return (
     <ListItem divider={true} ref={ref}>
