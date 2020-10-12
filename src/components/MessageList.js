@@ -36,11 +36,7 @@ const MessageList = () => {
   return (
     <List className={classes.root}>
       {messages.map(({ key, name, text }) => {
-        return (
-          <MessageItem key={key} name={name} text={text}>
-            item
-          </MessageItem>
-        );
+        return <MessageItem key={key} name={name} text={text} />;
       })}
     </List>
   );

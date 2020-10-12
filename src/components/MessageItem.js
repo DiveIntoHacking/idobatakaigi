@@ -10,7 +10,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import { gravatarPath } from '../gravatar';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   inline: {
     display: 'inline',
   },
