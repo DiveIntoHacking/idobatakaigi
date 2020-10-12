@@ -16,7 +16,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const MessageItem = ({ name, text }) => {
+const MessageItem = ({ isLastItem, name, text }) => {
   const classes = useStyles();
   const avatarPath = gravatarPath(name);
 
