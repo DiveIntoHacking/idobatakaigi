@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import {
   Avatar,
   ListItem,
@@ -20,6 +20,8 @@ const MessageItem = ({ isLastItem, name, text }) => {
   const ref = useRef(null);
   const classes = useStyles();
   const avatarPath = gravatarPath(name);
+
+  useEffect(() => {}, []);
 
   return (
     <ListItem divider={true} ref={ref}>
