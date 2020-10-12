@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import {
   Avatar,
   ListItem,
@@ -17,6 +17,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 const MessageItem = ({ isLastItem, name, text }) => {
+  const ref = useRef(null);
   const classes = useStyles();
   const avatarPath = gravatarPath(name);
 
