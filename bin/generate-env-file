@@ -13,14 +13,13 @@ REACT_APP_FIREBASE_MESSAGING_SENDER_ID='${firebaseSettings.messagingSenderId}'
 REACT_APP_FIREBASE_APP_ID='${firebaseSettings.appId}'
 `;
 
-const TRIMMED_ENV_LOCAL = ENV_LOCAL.trim()
+const TRIMMED_ENV_LOCAL = ENV_LOCAL.trim();
 
-const env_file_name = '.env.local';
+const envFileName = '.env.local';
 
 try {
-  fs.writeFileSync(env_file_name, TRIMMED_ENV_LOCAL);
-  console.log(`Congrats! ${env_file_name} was successfully generated!`);
+  fs.writeFileSync(envFileName, TRIMMED_ENV_LOCAL);
+  console.log(`Congrats! ${envFileName} was successfully generated!`);
 } catch (e) {
   console.log(e);
 }
-
