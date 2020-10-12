@@ -23,7 +23,7 @@ const MessageItem = ({ isLastItem, name, text }) => {
 
   useEffect(() => {
     if (isLastItem) {
-      ref.current.scrollIntoView();
+      ref.current.scrollIntoView({ behavior: 'smooth' });
     }
   }, [isLastItem]);
 
