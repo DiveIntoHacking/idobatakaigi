@@ -22,7 +22,7 @@ const MessageItem = ({ isLastItem, name, text }) => {
   const avatarPath = gravatarPath(name);
 
   return (
-    <ListItem divider={true}>
+    <ListItem divider={true} ref={ref}>
       <ListItemAvatar>
         <Avatar src={avatarPath} />
       </ListItemAvatar>
