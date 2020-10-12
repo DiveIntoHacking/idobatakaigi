@@ -21,7 +21,7 @@ const MessageItem = ({ isLastItem, name, text }) => {
   const classes = useStyles();
   const avatarPath = gravatarPath(name);
 
-  useEffect(() => {}, []);
+  useEffect(() => {}, [isLastItem]);
 
   return (
     <ListItem divider={true} ref={ref}>
