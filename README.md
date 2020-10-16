@@ -1,4 +1,4 @@
-# React Starter Kit in TypeScript
+# React Starter Kit in JavaScript
 
 ## Node のインストール方法
 
