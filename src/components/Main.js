@@ -18,7 +18,6 @@ const Main = ({ name }) => {
   return (
     <div className={classes.root}>
       <MessageList />
-      hello world goodbye world
       <MessageInputField name={name} />
     </div>
   );
